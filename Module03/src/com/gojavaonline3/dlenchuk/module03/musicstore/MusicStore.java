@@ -1,4 +1,4 @@
-package com.gojavaonline3.dlenchuk.musicstore;
+package com.gojavaonline3.dlenchuk.module03.musicstore;
 
 import java.util.List;
 
