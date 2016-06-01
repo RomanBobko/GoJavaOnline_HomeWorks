@@ -8,7 +8,15 @@ import java.util.List;
  * Class Music Store
  */
 public class MusicStore {
+
+    private static final MusicStore instance = new MusicStore();
     private final List<MusicalInstrument> musicalInstruments = new ArrayList<>();
+
+    private MusicStore() {}
+
+    public static MusicStore getInstance() {
+        return instance;
+    }
 
     public boolean add(MusicalInstrument musicalInstrument) {
         if (musicalInstruments.add(musicalInstrument)) {

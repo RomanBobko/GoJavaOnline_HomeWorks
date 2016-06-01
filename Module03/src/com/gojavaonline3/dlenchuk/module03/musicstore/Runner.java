@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 public class Runner {
     public static void main(String[] args) {
         int sequenceId = 0;
-        MusicStore store = new MusicStore();
+        MusicStore store = MusicStore.getInstance();
 
         store.report();
 
