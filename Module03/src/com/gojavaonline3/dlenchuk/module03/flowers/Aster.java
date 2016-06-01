@@ -5,4 +5,7 @@ package com.gojavaonline3.dlenchuk.module03.flowers;
  *
  */
 public class Aster extends Flower {
+    public Aster(Color color, int height, boolean hasSmell, State state) {
+        super(color, height, hasSmell, state);
+    }
 }

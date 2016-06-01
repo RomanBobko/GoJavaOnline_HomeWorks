@@ -1,5 +1,6 @@
 package com.gojavaonline3.dlenchuk.module03.flowers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,5 +8,28 @@ import java.util.List;
  *
  */
 public class BouquetOfFlowers {
-    List<Flower> flowers;
+    private final List<Flower> flowers = new ArrayList<>();
+
+    public boolean add(Flower flower) {
+        return flowers.add(flower);
+    }
+
+    public Flower remove(int index) {
+        return flowers.remove(index);
+    }
+
+    public boolean remove(Flower flower) {
+        return flowers.remove(flower);
+    }
+
+    public void add(List<Flower> flowers) {
+        this.flowers.addAll(flowers);
+    }
+
+    @Override
+    public String toString() {
+        return "BouquetOfFlowers{" +
+                "flowers=" + flowers +
+                '}';
+    }
 }
